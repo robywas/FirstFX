@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myprojects.firstFX.controllers.OptionController">
+   <children>
+      <Label layoutX="270.0" layoutY="22.0" text="Opcje" />
+      <Button layoutX="273.0" layoutY="343.0" mnemonicParsing="false" onAction="#backMenu" text="Menu" />
+      <ComboBox layoutX="329.0" layoutY="140.0" prefWidth="150.0" />
+      <CheckBox layoutX="126.0" layoutY="132.0" mnemonicParsing="false" text="CheckBox" />
+   </children>
+</Pane>

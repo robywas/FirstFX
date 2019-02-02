@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import myprojects.firstFX.controllers.StackPaneController;
 
 
 public class Main extends Application {
@@ -17,18 +16,13 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("/fxml/StackPaneWindow.fxml"));
+
+        loader.setLocation(this.getClass().getResource("/fxml/MainScreen.fxml"));
         StackPane stackPane = loader.load();
-
-        StackPaneController controller = loader.getController();
-
-        Scene scene = new Scene(stackPane);
-
+        Scene scene = new Scene(stackPane, 400, 400);
         primaryStage.setScene(scene);
         primaryStage.setTitle("firstFX");
         primaryStage.show();
-
     }
-
 
 }
