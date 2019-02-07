@@ -1,4 +1,4 @@
-package myprojects.firstFX.examples;
+package myprojects.firstFX.examples ;
 
 
 import javafx.beans.binding.When;
@@ -19,7 +19,7 @@ public class PersonViewModel {
     //label OK surname
     private BooleanProperty surnameOkProperty = new SimpleBooleanProperty(false);
     // on/off surname field
-    private BooleanProperty disableSurnameProperty = new SimpleBooleanProperty(true);
+    private BooleanProperty disableSurnameProperty = new SimpleBooleanProperty(false);
     //textfield year of birth
     private IntegerProperty yearProperty = new SimpleIntegerProperty();
     // confirm CheckBox
@@ -35,7 +35,7 @@ public class PersonViewModel {
     public PersonViewModel() {
         nameOkProperty.bind(nameProperty.isNotEmpty());
         surnameOkProperty.bind(surnameProperty.isNotEmpty());
-        disableSurnameProperty.bind(nameProperty.isEmpty());
+//        disableSurnameProperty.bind(nameProperty.isEmpty());
         buttonProperty.bind(confirmProperty.not());
         ageProperty.bind(new When(yearProperty.isNotEqualTo(0)).
                 then(actualYearProperty.subtract(yearProperty).asString()).otherwise(""));

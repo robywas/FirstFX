@@ -1,4 +1,4 @@
-package myprojects.firstFX.examples;
+package myprojects.firstFX.examples.listeners;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class BindingApp extends Application {
+public class ListenerApp extends Application {
 
 
     public static void main(String[] args) {
@@ -16,7 +16,8 @@ public class BindingApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/Binding.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/Listener.fxml"));
+        System.out.println("Startujemy");
 
         Pane pane = loader.load();
         Scene scene = new Scene(pane);

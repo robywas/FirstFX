@@ -1,4 +1,4 @@
-package myprojects.firstFX.examples;
+package myprojects.firstFX.examples.bindings;
 
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.NumberBinding;

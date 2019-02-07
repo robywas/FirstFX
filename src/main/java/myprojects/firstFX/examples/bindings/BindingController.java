@@ -1,4 +1,4 @@
-package myprojects.firstFX.examples;
+package myprojects.firstFX.examples.bindings;
 
 
 import javafx.fxml.FXML;
@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.util.StringConverter;
 import javafx.util.converter.NumberStringConverter;
+import myprojects.firstFX.examples.PersonViewModel;
 
 public class BindingController {
 
